@@ -1,5 +1,5 @@
 /* componente funcion */
-import React, {useState} from 'react';
+import React, { useState} from 'react';
 import PropTypes from 'prop-types';
 
 
@@ -7,22 +7,23 @@ import PropTypes from 'prop-types';
 const Greetingf = (props) => {
 
 	// Breve introducción a useState
-	// const [variable, metodo para actualizarlo] = useState(valor inicial)
-	const [age, setage] = useState(39);
+	//const [variable, metodo para actualizarlo] = useState(valor inicial)
+	const [age, setage] = useState(29);
 
 	const birthday = () => {
 		// actualizamos el State
 		setage(age + 1);
 	}
 
+
 	return (
 		<div>
 			<h1>Hola {props.name} desde el componente funcional</h1>
 			<h2>Tu edad es: {this.state.age}</h2>
 			{/* creamos en el boton onclick y la funcion birthday */}
-			<div>
-				<button onclick={this.birthday}>Cumplir años</button>
-			</div>
+			<button onClick={birthday}>
+				Cumplir años
+			</button>
 		</div>
 	);
 };
